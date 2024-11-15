@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>iPortfolio Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -157,7 +157,7 @@
 
                                 <li>Phone: 9327538345</li>
 
-                                <li>height: 5'8</li>
+                                <li>block-size: 5'8</li>
 
                             </ul>
                         </div>
@@ -210,25 +210,142 @@
 
 
             </div>
-            <div class="new">
-                <a href="https://www.instagram.com/devjoshi_07/"><img src="insta.png" height="20%" width="15%"></a>
-                <div class="tt">
-                    <p>Devjoshi_07</p>
-                </div>
-                <a href="https://www.facebook.com/profile.php?id=100023234780642&mibextid=b06tZ0"><img src="FB.png" height="20%" width="15%"></a>
-                <div class="tt">
-                    <p>Dev Joshi</p>
-                </div>
-                <a href="https://www.snapchat.com/add/devjoshi-07?sender_web_id=8cee4518-f33c-4812-8a16-00549ed4f5c6&device_type=desktop&is_copy_url=true"><img src="snap.png" height="20%" width="15%"></a>
-                <div class="tt">
-                    <p>devjoshi-07</p>
-                </div>
-                <a href="https://www.linkedin.com/in/dev-joshi-42784625a"><img src="linkedin.png" height="20%" width="15%"></a>
-                <div class="tt">
-                    <p>Devjoshi</p>
-                </div>
 
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background: #f9f9f9;
+                    /* Light background */
+                    box-sizing: border-box;
+                }
+                
+                .new {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 40px;
+                    /* Increased gap between items */
+                    margin: 50px 20px;
+                }
+                
+                .new a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 16px;
+                    /* Increased text size */
+                    transition: transform 0.3s ease;
+                }
+                
+                .new a:hover {
+                    transform: translateY(-12px);
+                    /* Slightly stronger lift effect */
+                }
+                
+                .new a i {
+                    font-size: 50px;
+                    /* Increased icon size */
+                    width: 90px;
+                    height: 90px;
+                    line-height: 90px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: white;
+                    transition: all 0.3s ease;
+                }
+                /* Platform-specific colors */
+                
+                .new a.instagram i {
+                    background: #e1306c;
+                    /* Instagram pink */
+                    box-shadow: 5px 5px 15px rgba(225, 48, 108, 0.4), -5px -5px 15px rgba(225, 48, 108, 0.4);
+                }
+                
+                .new a.instagram i:hover {
+                    background: linear-gradient(45deg, #fd1d1d, #833ab4);
+                    /* Instagram gradient */
+                    box-shadow: 5px 5px 20px rgba(253, 29, 29, 0.6), -5px -5px 20px rgba(131, 58, 180, 0.6);
+                }
+                
+                .new a.facebook i {
+                    background: #1877f2;
+                    /* Facebook blue */
+                    box-shadow: 5px 5px 15px rgba(24, 119, 242, 0.4), -5px -5px 15px rgba(24, 119, 242, 0.4);
+                }
+                
+                .new a.facebook i:hover {
+                    background: #165dbb;
+                    /* Darker Facebook blue */
+                    box-shadow: 5px 5px 20px rgba(22, 93, 187, 0.6), -5px -5px 20px rgba(22, 93, 187, 0.6);
+                }
+                
+                .new a.snapchat i {
+                    background: #fffc00;
+                    /* Snapchat yellow */
+                    color: black;
+                    /* Black icon for contrast */
+                    box-shadow: 5px 5px 15px rgba(255, 252, 0, 0.4), -5px -5px 15px rgba(255, 252, 0, 0.4);
+                }
+                
+                .new a.snapchat i:hover {
+                    background: #ffd700;
+                    /* Darker yellow */
+                    box-shadow: 5px 5px 20px rgba(255, 215, 0, 0.6), -5px -5px 20px rgba(255, 215, 0, 0.6);
+                }
+                
+                .new a.linkedin i {
+                    background: #0077b5;
+                    /* LinkedIn blue */
+                    box-shadow: 5px 5px 15px rgba(0, 119, 181, 0.4), -5px -5px 15px rgba(0, 119, 181, 0.4);
+                }
+                
+                .new a.linkedin i:hover {
+                    background: #005582;
+                    /* Darker LinkedIn blue */
+                    box-shadow: 5px 5px 20px rgba(0, 85, 130, 0.6), -5px -5px 20px rgba(0, 85, 130, 0.6);
+                }
+                
+                .new .tt {
+                    text-align: center;
+                    margin-top: 10px;
+                    font-size: 18px;
+                    /* Increased font size */
+                    font-weight: 600;
+                    color: #333;
+                    transition: color 0.3s ease;
+                }
+                
+                .new a:hover .tt {
+                    color: #555;
+                    /* Subtle color change on hover */
+                }
+            </style>
+
+            <div class="new">
+                <a href="https://www.instagram.com/devjoshi_07/" class="instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <div class="tt">Devjoshi_07</div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100023234780642&mibextid=b06tZ0" class="facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <div class="tt">Dev Joshi</div>
+                </a>
+                <a href="https://www.snapchat.com/add/trigger_2op?share_id=gTF7bTxIBfs&locale=en-IN" class="snapchat" target="_blank">
+                    <i class="fab fa-snapchat"></i>
+                    <div class="tt">trigger_2op</div>
+                </a>
+                <a href="https://www.linkedin.com/in/dev-joshi-42784625a" class="linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="tt">Devjoshi</div>
+                </a>
             </div>
+
+
+
         </section>
         <!-- End Contact Section -->
 
